@@ -1,0 +1,11 @@
+{
+    "name": "Pomodoro Timer",
+    "version": "1.0.0",
+    "description": "tool used when employing the Pomodoro study method",
+    "manifest_version": 3,
+    "author": "Maxwell Frank",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Pomodoro Timer"
+    }
+}

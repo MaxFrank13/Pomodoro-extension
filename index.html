@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pomodoro Extension</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="button-container">
+        <button class="btn study">study</button>
+        <button class="btn break">break</button>
+        <button class="btn reset">reset</button>
+      </section>
+      <section class="timer">
+        <div class="minutes">
+          <h3>25</h3>
+          <span>min</span>
+        </div>
+        <div class="seconds">
+          <h3>00</h3>
+          <span>sec</span>
+        </div>
+      </section>
+    </main>
+    <script>
+      var popupWindow = window.open(
+        chrome.extension.getURL("normal_popup.html"),
+        "exampleName",
+        "width=400,height=400"
+      );
+      window.close();
+    </script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

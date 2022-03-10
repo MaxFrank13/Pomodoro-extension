@@ -1,0 +1,89 @@
+/* Variables */
+
+:root {
+    --beige: rgb(231 228 218);
+    --ice: rgb(84 197 191) 45%;
+    --deep-purple: rgb(28, 7, 37);
+    --trans-pink: rgb(247 149 178 / 53%);
+    --dark-teal: rgb(9 44 48);
+    --blue: rgba(0, 0, 255, 0.85) 45%;
+    --green: rgb(43 223 53 / 72%) 30%;
+}
+
+/* Reset browser defaults */
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main Container */
+main {
+    display: flex;
+    gap: 0.65rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 375px;
+    transition: 1s;
+    background: radial-gradient(var(--ice), var(--deep-purple));
+}
+
+/* Buttons */
+.button-container {
+    display: flex;
+    gap: 0.35rem;
+    padding: 0.25rem;
+}
+
+.btn {
+    padding: 0.35rem;
+    border: none;
+    border-radius: 0.2rem;
+    background: var(--trans-pink);
+    box-shadow: inset 2px 0px 6px 0px var(--beige), inset 0px 2px 6px 0px var(--beige);
+    font-weight: 600;
+    transition: 0.3s;
+}
+.btn:hover {
+    color: var(--beige);
+    text-shadow: 0 0 5px var(--dark-teal);
+}
+
+/* Timer */
+.timer {
+    display: flex;
+    gap: 0.35rem;
+    padding: 0.25rem;
+}
+
+.timer > * {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border: 1px solid black;
+    padding: 0.35rem;
+    gap: 0.15rem;
+    min-width: 53px;
+    box-shadow: inset 0 0 10px 3px var(--beige);
+    border-radius: 0.5rem;
+}
+
+/* Cycle Classes */
+.on-study {
+    background: radial-gradient(var(--blue), var(--deep-purple));
+    color: var(--beige);
+}
+.on-break {
+    background: radial-gradient(var(--green), var(--dark-teal));
+}
+
+/* Utility Classes */
+
+.hide {
+    display: none;
+}
